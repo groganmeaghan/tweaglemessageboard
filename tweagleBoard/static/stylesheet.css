@@ -1,0 +1,41 @@
+/* stylesheet.css */
+
+h1 {
+  color: #481914;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #481914 !important;
+}
+
+.button_icon {
+  color: #481914 !important;
+}
+
+.button_icon {
+  fill: currentColor !important;
+}
+
+.button_create {
+  background-color: #481914;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.btn {
+  background-color: green;
+  border: none;
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
