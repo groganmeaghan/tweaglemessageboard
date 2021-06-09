@@ -7,6 +7,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     body = models.TextField()
     post_date = models.DateField(auto_now_add=True)
+    post_time = models.TimeField(auto_now_add=True)
     likes = models.ManyToManyField(User, related_name='tweag_posts')
 
     def __str__(self):

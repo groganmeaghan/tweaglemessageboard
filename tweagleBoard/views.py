@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, DeleteView
 from .models import Post
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
@@ -20,3 +20,7 @@ def LikeView(request, pk):
     post = get_object_or_404(Post, id=request.POST.get('post_id'))
     post.likes.add(request.user)
     return HttpResponseRedirect(reverse('post-detail', args=[str(pk)]))
+
+class DeletePostView(DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
